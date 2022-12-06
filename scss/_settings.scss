@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+    font-family: var(--font-family);
+    font-size: 16px;
+ 
+}
+.menu-btn{
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--color-accent);
+    font-size: 22px;
+    color: var(--color-white);
+    line-height: 0;
+    display: none;
+    z-index: 30;
+    order: 3;
+    margin-left: auto;
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    @media screen and(max-width: 860px){
+        display: block;
+    }
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: var(--container-width);
+    padding: 0 var(--container-offset);
+}
+.title-xl {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--color-title);
+    @media screen and(max-width: 860px){
+        font-size: 28px !important;
+    }
+}
+.text-after {
+    font-weight: var(--font-medium);
+    text-align: left;
+    font-size: 22px;
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    color: var(--color-accent);
+    &::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 25px;
+        height: 5px;
+        background-color: #9b9b9b;
+        border-radius: 50px;
+    }
+    @media screen and(max-width: 860px){
+        font-size: 22px;
+    }
+}
+.text-after-top{
+    position: relative;
+    font-weight: var(--font-semibold);
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 7px;
+    text-align: left;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 5px;
+        background-color: #9b9b9b;
+        opacity: .5;
+        border-radius: 50px;
+    }
+    @media (max-width: 576px) {
+        font-size: 20px;
+    }
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

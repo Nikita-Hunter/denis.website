@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./public/javascript/app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./public/style/vendor/normalize.css">
+    <link rel="stylesheet" href="./public/style/style.min.css">
+    <title>Главная страница</title>
+</head>
+<body class="application">
+    <div class="application__template">
+        <header class="header-top" id="header-top">
+            <div class="header-top__container container">
+              <div class="header-top__content">
+                <button type="button" class="menu-btn" id="menu-btn">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <nav class="header-top__navbar">
+                    <ul class="header-top__navbar-list">
+                       <li class="header-top__navbar-item"><a href="#" class="header-top__navbar-link">О компании</a></li>
+                       <li class="header-top__navbar-item"><a href="#" class="header-top__navbar-link">Услуги</a></li>
+                       <li class="header-top__navbar-item"><a href="#" class="header-top__navbar-link">Прайс - лист</a></li>
+                       <li class="header-top__navbar-item"><a href="#" class="header-top__navbar-link">Контакты</a></li>
+                    </ul>
+                   </nav>
+                   <div class="header-top__phone-block">
+                    <a href="tel:+0000000000" class="header-top__phone-link">
+                        <span class="header-top__phone-icon">
+                            <img src="./public/assets/icon/phone_icon.svg" alt="" class="header-top__phone-svg">
+                        </span>
+                        <h3 class="header-top__phone-text">
+                            <span class="header-top__phone-subtitle">Волгоград</span>
+                            +7 (000) 000-00-00
+                        </h3>
+                    </a>
+                   </div>
+                   <button class="button button-primary">Обратная связь</button>
+              </div>
+            </div>
+        </header>
+        <main class="application__main main">
+            <section class="hero-section">
+                <div class="hero-section__container container">
+                    <div class="hero-section__content" style="background-image: url(/public/assets/img/img_1.jpg);">
+                        <div class="hero-section__content-headline">
+                            <h2 class="hero-section__content-title title-xl">
+                                Название сайта
+                                <span class="text-after">Продажа запчастей в Волгограде и Волгоградской области</span>
+                            </h2>
+                        </div>
+                        <ul class="hero-section__benefit">
+                            <li class="hero-section__benefit-item">
+                                <img width="48" height="48" src="./public/assets/icon/icon_1.svg" alt="">
+                                <span class="text-after-top">Производим монтажные работы</span>
+                            </li>
+                            <li class="hero-section__benefit-item">
+                                <img width="48" height="48" src="./public/assets/icon/icon_2.svg" alt="">
+                                <span class="text-after-top">Бесплатная консультации инженеров</span>
+                            </li>
+                            <li class="hero-section__benefit-item">
+                                <img width="48" height="48" src="./public/assets/icon/icon_3.svg" alt="">
+                                <span class="text-after-top">Наличие всех сертификатов качества</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="category-section" style="padding: 20px 0;">
+                <div class="category-section__container container">
+                    <div class="category-section__content">
+                        <h2 class="category-section__content-title title-xl" style="width: 80%; font-size: 30px;">
+                            <span class="text-after" style="margin-bottom: 15px;">Подбор крана по категории</span>
+                            Мы даем возможность работать на любых высотах при любых условиях
+                        </h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

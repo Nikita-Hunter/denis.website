@@ -1,0 +1,22 @@
+.button{
+    border: 4px solid #99a3b0;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    background-color: var(--color-accent);
+    font-weight: var(--font-semibold);
+    padding: 12px 15px;
+    border-radius: 50px;
+    min-width: 180px;
+    color: var(--color-white);
+    @media screen and (max-width: 1070px){
+        min-width: 40px;
+        font-size: 16px;
+    }
+    @media screen and (max-width: 576px){
+        min-width: auto;
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+}
